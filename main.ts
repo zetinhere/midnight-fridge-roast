@@ -15,10 +15,14 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
-// Rev 1 — draft line (C01): my own top pick before the tournament ran.
-// The tournament winner replaces this line in Rev 2.
+// Rev 2 — tournament winner (C18): 3–0 in the top-4 round robin, weighted
+// score 53/55 (tied top with C06, won the head-to-head on the punchline).
+// Proxy judge was unavailable (100milionseek 503 "service is busy" x3), so the
+// tournament was judged manually against the house brief's five criteria in
+// order; see tournament_manual.md in the work log. The line's punch is a
+// concrete image ("boxers and regret") aimed squarely at the midnight lock.
 const LINE =
-  "My fridge locks at midnight like a bouncer who read my 2 AM snack history and decided I need help, not leftovers.";
+  "The fridge locks at midnight like a nightclub with a dress code, and my 2 AM outfit — boxers and regret — doesn't make the cut.";
 
 const outPath = "/output/entry.txt";
 mkdirSync(dirname(outPath), { recursive: true });
